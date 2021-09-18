@@ -1,0 +1,174 @@
+body{
+    background-color:#f5d9d5;
+    font-family:'Nunito', sans-serif;
+}
+
+
+/* NAVBAR STYLES */
+a.navbar-brand{
+    color: #ea1c2c !important;
+    font-size: 2rem;
+    font-weight: 100;
+    padding-left: 8px;
+
+}
+
+a.nav-link{
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 200;
+    display: inline-block;
+}
+
+a.nav-link:hover{
+    color: #ea1c2c !important;
+}
+/* PICTURE EDITS */
+img.top-pic{
+    width: 50vw;
+    transition: all, 0.5s;
+}
+
+img.top-pic:hover{
+    width: 52vw;
+}
+
+div.col.top-pic{
+    padding: 0;
+}
+
+div#sidebar-1,
+#sidebar-2,
+#sidebar-3,
+#sidebar-4,
+p{
+    margin: auto;
+}
+
+div#sidebar-1,
+#sidebar-2,
+#sidebar-3,
+#sidebar-4,
+h2{
+    text-align: center;
+}
+
+h2{
+    font-size: 3vw;
+    margin: 0;
+    max-height: 6vh;
+}
+/* link to see more candy */
+a{
+    text-decoration: none;
+}
+
+h2.linked{
+    color: #ea1c2c;
+    font-size: 1vw;
+    margin-bottom: 30px;
+    transition: all, 0.5s;
+}
+
+h2.linked:hover{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+/* slash lines in the website title */
+span.slash-color{
+    font-size: 4vw;
+    font-weight: 300;
+    color: #ea1c2c;
+}
+
+div.row{
+    box-sizing: border-box;
+    margin-bottom: 180px;
+    margin-right: 0;
+   
+}
+
+div.container-fluid{
+    padding-right: 0;
+}
+
+h1{
+    color: #ea1c2c;
+    text-align: center;
+}
+
+img.sm-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+/* MEDIA QUERY 
+============== */
+@media (max-width:900px) {
+    div#sidebar-1{
+        visibility: hidden;
+        padding: 0;
+    }
+
+    div.row{
+        width: 0;
+        margin-bottom: 0;
+    }
+
+    img.top-pic{
+        width: 100vw;
+    }
+
+    li.nav-item{
+        padding-left: 25px;
+        padding-top: 5px;
+    }
+
+    a.nav-link{
+        text-shadow: 1px 1px rgb(102, 212, 240);
+    }
+
+    a.nav-link:hover{
+        text-shadow: none;
+    }
+
+    
+/* CHANGING TEXT POSITION WITH THE PICTURES ABOVE IT */
+    div#sidebar-2,
+    #sidebar-3,
+    #sidebar-4{
+        position: absolute;
+        padding-top: 30px;
+    }
+
+    div#top-pic{
+        margin-top:550px ;
+    }
+
+    #btm-pic-1,
+    #btm-pic-2{
+        margin-top: 350px;
+    }
+
+    h2.linked{
+        font-size: 3vw;
+    }
+
+    img.top-pic:hover{
+        width: 100vw;
+    }
+
+}
+
+
+
