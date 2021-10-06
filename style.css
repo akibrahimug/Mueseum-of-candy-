@@ -99,11 +99,11 @@ h1{
 }
 
 img.sm-icon{
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 15%;
 }
+
 
 p{
     text-align: center;
@@ -112,7 +112,104 @@ p{
     max-width: 600px;
 }
 
-/* MEDIA QUERY 
+/*======== ABOUT ME PAGE STYLE========= */
+.top-pic-1{
+    width: 100vw;
+    display: block;
+}
+
+.about-p{
+    display: flex;
+    margin: 10px;
+    background: #ffd1c9;
+    padding: 20px;
+    border-radius:30px 0;
+}
+
+#founder-face{
+    width: 35%;
+    height: 30%;
+
+}
+
+.founder{
+    display: flex;
+    border: 5px solid #ea1c2c;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.founder-icon{
+    width: 20%;
+    margin: 25px;
+}
+
+.founder-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.bottom-wrapper{
+    border-top: black 1px solid;
+    margin-top: 60px;
+}
+
+ul.ul-1{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: auto;
+    margin-top: 5px;
+    width: 60%;
+}
+
+li{
+    padding: 3px;
+}
+
+.team-pic{
+    width: 20%;
+    margin-right:10px;
+    margin-left: 10px;
+    display: block;
+    margin-top: 40px;
+}
+
+.team{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 80px;
+
+}
+
+.team-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #ea1c2c;
+}
+
+.team-p{
+   width: 20%; 
+   margin-left: 10px;
+   margin-right: 40px;
+   font-size: 15px;
+}
+
+.our-team{
+    padding: 50px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* MEDIA QUERY INDEX
 ============== */
 @media (max-width:900px) {
     div#sidebar-1{
@@ -157,7 +254,7 @@ p{
 
     #btm-pic-1,
     #btm-pic-2{
-        margin-top: 350px;
+        margin-top: 500px;
     }
 
     h2.linked{
@@ -166,6 +263,44 @@ p{
 
     img.top-pic:hover{
         width: 100vw;
+    }
+
+    /* ABOUT PAGE */
+
+    .team-pic{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .team{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .team-p{
+        padding:1rem;
+        width: 100vw;
+        margin-right: 0;
+        margin-left: 10%;
+        
+    }
+
+    .process-p{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .about-us{
+        width: 100%;
+    }
+
+    .founder{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #founder-face{
+        width: 100%;
     }
 
 }
