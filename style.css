@@ -53,7 +53,7 @@ h2{
     text-align: center;
 }
 
-h2{
+h2.home-h2{
     font-size: 3vw;
     margin: 0;
     max-height: 6vh;
@@ -209,6 +209,85 @@ li{
     font-size: 25px;
 }
 
+/* =====TICKETS PAGE STYLES======== */
+.ticket-wrapper{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.box-container{
+    display: flex;
+    
+}
+
+.box-head{
+    color: #f5d9d5;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.box{
+    flex-grow: 1;
+    background-color: #f7f7f7;
+    margin: 10px; 
+    transition: 1s flex-grow;
+}
+
+.box:hover{
+    flex-grow: 1.5;
+}
+
+h3,
+.box-li{
+    text-align: center;
+    display: block;
+}
+
+.box-h3{
+    border: 2px solid #f7f7f7;
+    padding: 18px;
+    font-size: 17px;
+}
+
+li.box-li{
+    list-style: none;
+}
+
+.canceled{
+    text-decoration: line-through;
+}
+ul.box-ul{
+    padding: 0%;
+    margin-top: 25px;
+}
+.box-button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #ea1c2c;
+    color: #f5d9d5;
+    font-weight: 300;
+    padding: 10px;
+    transition: 0.7s all;
+}
+
+.box-button:hover{
+    color:black;
+    background-color:#f7f7f7 ;
+}
+
+input{
+    display: block;
+    width: 60%;
+}
+
+label{
+    visibility: hidden;
+    position: absolute;
+}
 /* MEDIA QUERY INDEX
 ============== */
 @media (max-width:900px) {
