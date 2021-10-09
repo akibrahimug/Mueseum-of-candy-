@@ -211,6 +211,7 @@ li{
 
 /* =====TICKETS PAGE STYLES======== */
 .ticket-wrapper{
+    max-width: 800px;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -278,16 +279,184 @@ ul.box-ul{
     color:black;
     background-color:#f7f7f7 ;
 }
-
-input{
-    display: block;
-    width: 60%;
+/* form styles */
+form{
+   margin-left:auto ;
+   margin-right: auto;
+   width: 95%;
+   background-color: #f7f7f7;
+   padding: 30px;
+   box-sizing: border-box;
 }
 
-label{
+.input-head,
+.input-head.radio{
+    text-align: left;
+}
+
+.input-head.radio{
+    font-size: 20px;
+    
+}
+
+
+.inner-form-1 input,
+.inner-form-2 input,
+.card-details input,
+input[type='submit'],
+input#card{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #f5d9d5;
+    border-radius: 5px;
+    outline-color:black;
+    background-color: #f7f7f7;
+}
+
+input::placeholder{
+    color:black;
+}
+
+label.hide-labe{
     visibility: hidden;
-    position: absolute;
+    position: absolute; 
 }
+
+label.age{
+    position: relative;
+    visibility: visible;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.inner-form-2{
+    display: flex;
+}
+
+input#num,
+input#age{
+    width: 40%;
+}
+
+input#age{
+    margin-right: 15px;
+}
+
+input#num{
+    margin-left: 15px;
+}
+
+/* payment card styles */
+
+.payment{
+    border: 2px solid #f5d9d5;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.pay-icon-wrapper{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    
+}
+.payment-cards{
+    width: 35%;
+    height: 40px;
+}
+
+.card-icon{
+    width: 10%;
+    height: 35px;
+}
+
+.card-p{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.card-details{
+    display: flex;
+}
+input.one-line-card-details{
+    width: 20%;
+    margin-left: 15px;
+}
+
+.expire{
+    flex-grow: 2;
+}
+
+input[type='submit']{
+    border: none;
+    background-color: #ea1c2c;
+    color: #f5d9d5;
+}
+
+input[type='submit']:hover{
+    color:black;
+    background-color:#f7f7f7 ; 
+}
+
+/* radio styles */
+
+.card-option-1,
+.card-option-3{
+    width: 5rem;
+    
+}
+
+.card-option-2,
+.card-option-4{
+    width: 3rem;
+}
+
+.inner-radio-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid #f5d9d5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.inner-radio-wrapper label{
+    flex-grow: 2;
+}
+
+.radio-select{
+    border: 2px solid #f5d9d5;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+input[type='radio']{
+    margin: 5px;
+}
+
+/* footer styles */
+
+footer{
+    background-color: black;
+    color: #f5d9d5;
+     height: 200px;
+    padding-top: 20px;
+}
+
+footer a{
+    color: #ea1c2c !important;
+}
+
+footer a:hover{
+    color: #f5d9d5 !important;
+}
+
 /* MEDIA QUERY INDEX
 ============== */
 @media (max-width:900px) {
@@ -381,7 +550,87 @@ label{
     #founder-face{
         width: 100%;
     }
+    /* =====TICKETS PAGE STYLES======== */
+    .ticket-wrapper{
+        width: 100vw;
+        margin: 0;
+    }
 
+    .box-h2{
+        margin-top: 60px;
+    }
+
+    .box-container{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw; 
+    }
+
+    .box{
+        margin: 0;
+        border: 2px solid #ea1c2c;
+    }
+
+    ul.box-ul{
+        background-color: #f5d9d5;
+        margin: 0;
+    }
+
+    .box-head{
+        background-color: #f5d9d5;
+        color: black;
+    }
+
+    /* form styles */
+    form{
+        width: 100vw;
+    }
+
+    .inner-form-2,
+    .card-details{
+        flex-direction: column;
+    }
+
+    input#age,
+    input#num,
+    input.one-line-card-details{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    input#num,
+    input.one-line-card-details{
+        margin-top: 20px;
+    }
+
+    label.age{
+        padding-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .pay-icon-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .payment-cards{
+        width: 60%;
+        margin: auto;
+        margin-top: 10px;
+        border-top: 1px solid black;
+    }
+
+    .card-icon{
+        width: 20%;
+        margin: auto;
+    }
+
+    .input-head{
+        margin-top: 35px;
+    }
 }
 
 
